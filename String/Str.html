@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String & methods in js </title>
+</head>
+
+<body>
+  <script>
+    //String is a sequence of charcter
+    let str = 'harshaa';
+    document.write(str + "<br>");
+    document.write(str[0] + "<br>");//str index start from 0
+    let str2 = "harshaa";
+    document.write(str2);
+    //template string : sring where we can add variables
+    //syntax to access variable & expression: `${}`
+    const a = 10;
+    const b = 20;
+    document.write(`a=${a} b=${b}`);
+
+    let s = 'ketan';
+    document.write(`This is ${s}` + "<br>");
+    document.write("length of string : " + s.length + "<br>");//length
+    document.write(s.toUpperCase() + "<br>");
+    document.write(s.toLowerCase() + "<br>");
+    document.write(s.slice(2, 5));
+    document.write(s.slice(4) + "<br>");
+    document.write(s.replace('an', 'da') + "<br>");
+    document.write(s.concat("chavan" + "<br>"));
+    let s2 = "    aditya is boy    ";
+
+    document.write(s2.trim() + "<br>");
+    for (let i = 0; i < s.length; i++) {
+      document.write(s.charAt(i) + " ");
+    }
+    //Q1.find length of str
+    let s3 = "harsha\""
+    document.write(s3.length);
+    //Q2.startswith & endswith
+    document.write(s3.startsWith('h'));
+    document.write(s3.endsWith('h'));
+
+
+
+  </script>
+
+</body>
+
+</html>
