@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in javascript</title>
+    <style>
+        .btn {
+            background-color: red;
+            height: 30px;
+            width: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--  1.Onclick 
+    2.onMouseOver
+    3.contextmenu : when u right click on mouse then event occured.
+    4.mouseOut : ele ke bahr mouse
+    5.Mousedown: 
+    6.mouseUp :
+    7.submit
+    8.focus:
+    9.DomContentLoaeded
+    10.trasnition event -->
+
+
+
+    <!--1)onclick
+    2)onmouseover
+   3)onmouseout
+   4)on change
+   5)onload 
+    6)keypress
+    7)keydown
+8)keyup   -->
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolorem facilis officia natus voluptas
+        eius exercitationem consequuntur. Recusandae placeat sit quidem temporibus vero inventore expedita distinctio
+        doloremque impedit, fugit est.</p>
+
+    <script>
+        <button id="btn" onclick="togglehide()">hide</button>
+
+        function togglehide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.Display != 'none') {
+                para.style.Display = 'none';
+            }
+            else {
+                para.style.Display = 'block';
+            }
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>
