@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>logical operator</title>
+    <script>
+        let a=prompt("enter a")
+        let b=prompt("enter b")
+        
+        document.write(a>b && a<b);
+
+        document.write(a>b || a<b);
+        document.write()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

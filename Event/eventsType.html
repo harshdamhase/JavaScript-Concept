@@ -15,8 +15,8 @@
     </style>
 </head>
 
-<body>
-
+<body onload="load()">
+<!--onload write in bodyy-->
     <!-- Most Frequently used 
    1)onclick
     2)onmouseover
@@ -32,6 +32,7 @@
 
     <img src="BulbOn.png" alt="img" onmouseout="alert('mouse over')" height="100px"><!--3.onmouseout ele ke baher mouse move karo-->
 
+
     <button onclick="savefile()">save file</button>
 
     <input type="text" placeholder="enetr your name" onchange="showname()"/><!--4.onchange : ele mein changes hote hi trigger hota hai (input box)-->
@@ -44,9 +45,13 @@
  
         function showname()
         {
-            document.write("showname");
+            console.log("showname");
         }
 
+        function load()
+        {
+            alert("load suceessful");
+        }
 
     </script>
 
