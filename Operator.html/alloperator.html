@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comparison operator</title>
+</head>
+//relation & comparison both are same.(comapare the value returns boolean value)
+
+<body>
+    <script type="text/javascript">
+        let a1 = 100;
+        let a2 = 100;
+        console.log(a1 == a2);//
+        console.log(a1 != a2);
+        console.log(a1 > a2);
+        console.log(a1 < a2);
+        console.log(a1 >= a2);
+        console.log(a1 <= a2);
+
+        //logical operator
+        //&& T T =T  2.T F= F 3.F T= F 4.F F=F 
+        let x = 10;//if both cond are true then it print true ow false
+        let y = 12;
+        console.log(x > y && x < y);//F F =F
+        console.log(x < y && x > y);//T F =F
+        console.log(x < y && y > x);//T T=T
+        console.log(x >= y && y > x);//F T=F
+
+        //(or)|| 1.T T=T 2.T F= T 3.F T=T F 4.F F=F
+        console.log(x > y || x != y);//F T = T
+        console.log(x < y || x > y);//T F=T
+        console.log(x != y || x > y);
+
+        // !(NOT operator)
+        console.log(!true);
+        console.log(!false);
+
+                //ternary opertor
+                let age1 = prompt("enter age1");
+        console.log(age1 > 16 ? "true" : "false");
+        
+
+
+        /* 1.Arithmetic Operators:- ( + , - , * , / , % )
+        2.Relational or Comparison operators:- (<, >, <=, >=, ==, !=)
+        3.Logical operators (&& (logical AND), || (logical OR), ! (logical NOT))
+         (i) AND operator (&&)
+         (ii) OR operator (||)
+        4.Assignment operators (=, +=, -=, *=, /=)
+        5. Bitwise operators (&, |, ^, ~, <<, >> */
+
+        //conditional operator
+        let a = prompt("enter a");//prompt is always in string
+        console.log(a);
+        document.write(a)
+
+        let b = prompt("what iis your age");
+        b = Number.parseInt(b);
+        console.log(typeof (b));
+
+
+        let b1 = alert("hello");
+        document.write(b1)
+        console.log(b1);
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</script>
+</body>
+
+</html>
