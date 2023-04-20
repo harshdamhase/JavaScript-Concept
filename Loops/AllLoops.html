@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loops in javascript</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //for loop:star1 is execute only one time(intialization)
+        //condition:stat2 excute chk condtion
+        //inc : stat3 execute repetedly
+        let sum=0;
+          for(let i=0;i<10;i++)
+          {
+              sum+=i;
+          }
+              console.log(sum);
+          
+
+        let sum1=0;
+         let num=prompt("enter value of n");
+        // n=Number.parseInt(num);
+         for(let i=0;i<num.length;i++)
+         {
+             sum1=sum1+parseInt(num);
+     
+         }
+         console.log(sum1);
+        //Q. wAp to print sum of natural no.
+        let sum9 = 0;
+        let n1 = prompt("enter value of n");
+        for (let i = 0; i < n1; i++) {
+            sum9 = sum9 + parseInt(i + 1);
+        }
+        console.log(sum9);
+
+        //for in loop : syntax for(key in object)
+
+        let obj = {
+            harry: 50, shiv: 90, xyz: 30
+        }
+        for (let a in obj) {
+            //obj[a]print values & a print only key 
+            //loop through values of an object    
+            console.log("key" + obj[a] + " " + "values" + a);
+        }
+
+        //for of loop
+        for (let b of "harsha") {
+            console.log(b);
+        }
+
+        //factorial of num;
+      let x = 0;
+        let y = 1;
+        let z = 0;
+        for (let i = 2; i <= 10; i++) {
+            z = x + y;
+            console.log(z);
+            x = y;
+            y = z;
+        }
+
+        //odd evevn sum of number
+      /*  let summ=0;
+        for(let i=0;i<10;i++)
+        {
+            if(i%2==0)
+            {
+                summ+=i;
+            }
+            else
+            {
+                summ+=i;
+            }
+        }console.log(summ);*/
+    </script>
+</body>
+
+</html>
