@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Modify Html Elemnts</title>
+    <style>
+        .normal {
+            color: blue;
+        }
+
+        .special {
+            color: palevioletred;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="firsthead" class="normal">This is heading</h1>
+    <h2 id="secondhead">This is another heading</h2>
+    <h2 id="thirdHead">This is thrid head</h2>
+    <script type="text/javascript">
+        const ele1 = document.getElementById("secondhead"); //getElelemnetById: //get a html ele by using id
+        //console.log(ele1);
+        ele1.className = "special";
+
+        ele1.innerHTML = "modified heading";//change kiya
+
+        const ele2 = document.getElementById("firsthead");
+        ele2.innerHTML = "hiiii goood morning";
+        // ele2.style.color="red";//chaging color text
+
+        ele3 = document.getElementById("thirdHead");
+        ele3.innerHTML = "Practice heading";
+        ele3.style.color
+
+    </script>
+</body>
+
+</html>
