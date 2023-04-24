@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>variable & datatypes</title>
+</head>
+<!--const used for constant var declaration
+          syntax : keyword valriableName;
+          Keyword: var let  const-->
+
+<body>
+  <script type="text/javascript">
+
+    // let a = 10;
+    //console.log(a);
+
+    const b = 100;
+    console.log(b);
+
+    let c = 10;
+    console.log(c);
+
+    //primitive datatypes in js : there are 7 nnbbsst
+    //1.n:number
+    //2. null
+    //3.string 
+    //4 symbol
+    //5.boolean
+    //6.big int
+    //7.undefined
+
+    let a = null;
+    let d = 20;
+    let e = true;
+    let f = "harsha";
+    let g = Symbol("I am good");
+    let h = BigInt("65");
+    console.log(a, d, e, f, g, h);
+    console.log(typeof h);
+    //Objects are non-primitive datatype : keyvalue pair
+    const abc = {
+      "harsha": true, "subh": false, "adi": undefined, "int": 39
+    }
+    console.log(abc["int"]);
+    //Q1.create a var of string and add it
+    let str1 = "50";
+    let str2 = "js";
+    console.log(str1 + str2);
+    console.log(typeof (str1 + str2));
+
+    const a1 = {
+      name: "aditya",
+      section: 1,
+      isempty: "false"
+    };
+    a1['friend'] = "yogi";
+    a1['int'] = 100;
+    console.log(a1);
+
+    //Arithmetic operator
+    let b1 = 10;
+    let b2 = 30;
+    console.log(b1 + b2);
+    console.log(b1 - b2);
+    console.log(b1 * b2);
+    console.log(b1 / b2);
+    console.log(b1 % b2);//remender store krte % opearator
+    console.log("b1:" + b1++);//output is 10//pehle print krega then increment krgega this is post increment
+    console.log("b1: " + b1);//11//pehle increment krga nd baad mein print krgea
+    console.log("b1 " + ++b1);//12
+    console.log("b1: " + --b1);//11
+    console.log(b1--);
+    console.log(--b1);
+    
+    //assignment operator
+    let ass = b2;
+    console.log(ass);
+    ass += 2;
+    console.log(ass);
+    ass -= 2;
+    console.log(ass);
+    ass *= 2;
+    console.log(ass);
+    ass /= 2;
+    console.log(ass);
+    ass === 2;
+    console.log(ass);
+
+
+
+</script>
+</body>
+
+</html>
