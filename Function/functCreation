@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+
+<body>
+    <script>
+        //Q1.WAAp to print marks of sub in obj
+
+        //let obj={"yogita":50,"shubhangi":50,"monika":40,"saurbh":30};
+        //console.log(obj);
+
+        /*  let cn = 40;
+          let i = 0;
+          i = prompt("enter correct no");
+  
+          while (i != cn) {
+              console.log("try again");
+              i++;
+          }
+          console.log("you hve enterned correct no");
+  
+          //write a fucntion to print mean of 5 no
+          let a = 10;
+          let b = 30;
+          let c = 21;
+          let d = 30;
+          let e = 10;
+          let sum = 0;
+          sum += a + b + c + d + e / 5;
+          console.log(sum);
+     
+        function hello() {
+            document.write("Hello world" + "<br>");
+        }
+        hello();
+        hello();
+        hello();
+        hello();
+
+
+        //function parameter & arguments
+        function sayhello(sname)//arguments : is a receiver received parameter.
+        {
+            document.write("hello " + sname);
+        }
+        sayhello("aanad" + "<br>");//parameter is pass value to func
+        sayhello("harsh" + "<br>");
+
+        //function to add two numbers.
+        function addnum(num1, num2) {
+            const sum = num1 + num2;
+            document.write("sum" + num1 + "+" + num2 + "=" + sum + "<br>");
+        }
+        addnum(10, 12);
+
+        //function num1 is bigger
+        function largenum(n1, n2) {
+            if (n1 > n2) {
+                document.write("n1 is large");
+            }
+            else {
+                document.write("n2 is large");
+            }
+        }
+        largenum(20, 10);
+
+        //wAp to find area of rect using l & b
+        function area(len, bre) {
+
+            let area = len * bre;
+            document.write(area + "<br>");
+        }
+        area(4, 5);
+
+
+        //taking ip values from user.
+        function sum() {
+            let a = parseInt(prompt("Enter value of a"));
+            let b = parseInt(prompt("Enter value of b"));
+
+            const c = a + b;
+            document.write(c + "<br>");
+        }
+        sum();
+
+        //taking value from user find area of rect
+        function rect()
+        {
+            let x=parseInt(prompt("enter length"));
+            let y=parseInt(prompt("enter breadth"));
+            let area1=x*y;
+            document.write(area1);
+
+        }
+        rect();
+
+                function ans()
+        {
+            const res=Math.sqrt(16);
+            document.write(res);
+        }
+        ans();
+
+ */
+        //returning value from function
+        function calarea(l1, b1) {
+            const area1 = l1 * b1;
+            return area1;
+        }
+        const z = calarea(4, 2);
+        document.write(z);
+
+        //returning value from func
+        function subn() {
+            const p = parseInt(prompt("enter p"));
+            const q = parseInt(prompt("enter q"));
+            const sub = p - q;
+            return sub;
+        }
+        const S = subn();
+        document.write(S);
+
+         
+
+    </script>
+</body>
+
+</html>
