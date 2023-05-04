@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting of Array bubble sort </title>
+</head>
+
+<body>
+    <script>
+        let arr = new Array(7, 8, 5, 3, 2, 1);
+        let i = 0;
+        let j = 0;
+        let temp;
+        document.write("Array Before sorting" + "<br/>");
+
+        for (; i < arr.length; i++) {
+            document.write(arr[i] + " " );
+        }
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = i+1; j < arr.length; j++) {
+                if (arr[i] < arr[j]) { 
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+        document.write("<br/>"+"after swapping array:"+"<br/>")
+        for (let i = 0; i < arr.length; i++) {
+            document.write(arr[i] + " ");
+        }
+    </script>
+</body>
+
+</html>
